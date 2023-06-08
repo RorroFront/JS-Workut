@@ -44,45 +44,45 @@
 
 // *MEDIANTE UNA FUNCION CON DOS PARAMETROS DETERMINAR SI UNA FRASE SE REPITE EN UNA ORACIÓN Y CUANTAS VECES LO HACE
 
-// function contador(phrase,keyphrase){
+function contador(phrase,keyphrase){
     
-//     let clean_phrase = phrase.toLowerCase().replace(/[!¡,.-]/gi, '');
-//     let counter = 0;
+    let clean_phrase = phrase.toLowerCase().replace(/[!¡,.-]/gi, '');
+    let counter = 0;
 
-//     if(clean_phrase.includes(keyphrase)){
+    if(clean_phrase.includes(keyphrase)){
 
-//         let cleaned_phrase = clean_phrase.split(' ');
+        let cleaned_phrase = clean_phrase.split(' ');
         
-//         let obj = {};
+        let obj = {};
 
         
 
-//         for(let item of cleaned_phrase){
+        for(let item of cleaned_phrase){
 
-//             if(obj[item]){
-//                 obj[item] ++ ;
-//             }else{
-//                 obj[item] = 1;
-//             }
+            if(obj[item]){
+                obj[item] ++ ;
+            }else{
+                obj[item] = 1;
+            }
             
             
-//         }
+        }
         
         
-//         // console.log(obj)
-//         counter = obj[keyphrase]
+        // console.log(obj)
+        counter = obj[keyphrase]
         
 
-//     }else{
-//         counter = 0
-//     }
+    }else{
+        counter = 0
+    }
 
-//     let answer = `En la frase "${phrase}" \n el número de coincidencias para la palabra "${keyphrase}" es de: `
-//     return answer+= " " +counter
+    let answer = `En la frase "${phrase}" \n el número de coincidencias para la palabra "${keyphrase}" es de: `
+    return answer+= " " +counter
 
     
-// }
-// console.log(contador("HOLA SI SENOR SI SOY DE RANCHO SI ME LLAMO", "si"))
+}
+console.log(contador("HOLA SI SENOR SI SOY DE RANCHO SI ME LLAMO", "si"))
 
 
 
