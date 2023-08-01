@@ -78,7 +78,7 @@ function contador(phrase,keyphrase){
     }
 
     let answer = `En la frase "${phrase}" \n el número de coincidencias para la palabra "${keyphrase}" es de: `
-    return answer+= " " +counter
+    return answer += " " +counter
 
     
 }

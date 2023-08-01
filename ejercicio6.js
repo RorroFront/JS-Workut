@@ -7,56 +7,100 @@
 
 
 
-function lado(numero) {
+// function lado(numero) {
 
-    let lado = "";
+//     let lado = "";
 
-    for (let i = 0; i < numero; i++) {
+//     for (let i = 0; i < numero; i++) {
 
-        lado += "*";
+//         lado += "*";
 
 
-    }
-    return lado
+//     }
+//     return lado
+
+// }
+
+
+
+// function cuadrado(numero) {
+
+//     let dibujo = lado(numero) + "\n";
+
+//     let contenido = "";
+
+//     for (let i = 2; i < numero; i++) {
+
+//         contenido = "*"
+
+//         for (let x = 2; x < numero; x++) {
+
+//             contenido += " "
+
+//         }
+
+//         contenido += "*"
+
+//         dibujo += contenido + "\n"
+
+
+//     }
+
+
+//     dibujo += lado(numero);
+
+//     return dibujo
+
+
+// }
+
+// console.log(cuadrado(4))
+
+
+function lado (numero){
+
+let figura = "";
+
+for(let i = 0; i < numero; i++){
+
+    figura += "*"
+
+}
+
+return figura
 
 }
 
 
+function cuadrado (numero){
 
-function cuadrado(numero) {
-
-    let dibujo = lado(numero) + "\n";
-
+    let dibujo = lado(numero) + "\n"
     let contenido = "";
 
-    for (let i = 2; i < numero; i++) {
+    for(let i = 2; i < numero; i++){
 
         contenido = "*"
 
-        for (let x = 2; x < numero; x++) {
+        for(let x = 2; x < numero; x++){
 
-            contenido += " "
+            contenido += " ";
+            
+           
 
+            
         }
-
+       
         contenido += "*"
-
-        dibujo += contenido + "\n"
-
-
+        
+        dibujo += contenido +"\n"
     }
 
 
-    dibujo += lado(numero);
+    dibujo += lado(numero)
 
     return dibujo
-
-
 }
 
 console.log(cuadrado(4))
-
-
-
 
 

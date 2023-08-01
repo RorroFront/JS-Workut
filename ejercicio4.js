@@ -6,10 +6,9 @@ function str (phrase){
 
     
 
-    for(word of phrase){
+    for(let word of phrase){
 
         arr = word + arr
-
         
     }
 
@@ -23,6 +22,8 @@ console.log(str("holamundo"))
 
 
 // *INVIERTE UN STRING SUN UTILIZAR MÉTODOS DE JS
+
+
 
 
 
