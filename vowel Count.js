@@ -7,7 +7,9 @@ function vowelCounter (string){
 
 
     let vowels = string.toLowerCase().replace(/[aeiou]/gi,'').split('')
+    console.log(vowels)
     let answ = string.toLowerCase().split('')
+    console.log(answ)
    
     let counter = 0;
 
