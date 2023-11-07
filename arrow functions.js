@@ -39,7 +39,7 @@ function pruebaReferencia() {
         name: 'Adrian'
 
     }
-   
+
     console.log(miCumpleaños, ` \n`)
 }
 
@@ -57,20 +57,21 @@ day = 'hola'
 
 
 
-function nan (x){
 
-    
-
-        if(Number.isNaN(x)){
-            return 'es NaN'
-        }else {
-           return 'No es NaN'
-        }
-        
-    
+function nan(x) {
 
 
-    
+
+    if (Number.isNaN(x)) {
+        return 'es NaN'
+    } else {
+        return 'No es NaN'
+    }
+
+
+
+
+
 }
 
 console.log(nan(NaN))

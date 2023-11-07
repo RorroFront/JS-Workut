@@ -18,6 +18,23 @@ console.log((surname));  // Smith
 console.log(typeof arr)
 console.log( [firstName, surname])
 
-console.log(arr[0].split(''))
-console.log(firstName.split(''))
+console.log(arr[1].split(" "))
+console.log(arr[0].split(' '))
+console.log(firstName.split(' '))
+
+
+//OBJ destructuring
+let obj = {
+
+    dog: 'snawzer',
+    color: 'grey',
+    size: 'small',
+    age: '2'
+}
+
+console.log(obj);
+//destructuring asignment obj
+let {dog} = obj
+
+console.log(dog)
 
